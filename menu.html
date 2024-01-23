@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-widht, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>BakeMart</title>
+</head>
+<body>
+<div class="main" id="section1">
+    <div class="container">
+        <h1>BakeMart</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+<!--                <li><a href="menu.html">MENU-01</a></li>-->
+<!--                <li><a href="menu2.html">MENU-02</a></li>-->
+                <li><a href="menuhtml.html">MENU</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+  <div class="container2">
+      <div class="wrapperDiv">
+          <div class="slider">
+              <div class="box1">
+                  <p class="pName">Peanut Cake</p>
+                  <p class="price">Tk 1200.00</p>
+                  <p class="weight"> 1000gm</p>
+                  <p class="cakeDetails">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+              <div class="box2">
+                  <p class="pName">Black Forest Cake</p>
+                  <p class="price">Tk 900.00</p>
+                  <p class="weight"> 1000gm</p>
+                  <p class="cakeDetails">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+              <div class="box3">
+                  <p class="pName clr-white">Apple Cake</p>
+                  <p class="price clr-white">Tk 1200.00</p>
+                  <p class="weight clr-white"> 1000gm</p>
+                  <p class="cakeDetails clr-white">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+              <div class="box4">
+                  <p class="pName clr-white">Flavoured Pastry</p>
+                  <p class="price clr-white">Tk 100.00</p>
+                  <p class="weight clr-white"> 150gm</p>
+                  <p class="cakeDetails clr-white">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+              <div class="box5">
+                  <p class="pName">Flavoured Cake</p>
+                  <p class="price">Tk 200.00</p>
+                  <p class="weight"> 450gm</p>
+                  <p class="cakeDetails">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+              <div class="box6">
+                  <p class="pName clr-white">Flavoured Pie</p>
+                  <p class="price clr-white">Tk 300.00</p>
+                  <p class="weight clr-white"> 120gm</p>
+                  <p class="cakeDetails clr-white">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+              <div class="box7">
+                  <p class="pName">Cake-01</p>
+                  <p class="price">Tk 1200.00</p>
+                  <p class="weight"> 1000gm</p>
+                  <p class="cakeDetails">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+                  </p>
+                  <button class="addToCartButton">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+  </div>
+      <script type="text/javascript">
+      function rotate() {
+        var lastChild = $('.slider div:last-child').clone();
+        /*$('#test').html(lastChild)*/
+        $('.slider div').removeClass('firstSlide')
+        $('.slider div:last-child').remove();
+        $('.slider').prepend(lastChild)
+        $(lastChild).addClass('firstSlide')
+      }
+      // rotate()
+      window.setInterval(function(){
+        rotate()
+      }, 4000);
+      </script>
+</div>
+</div>
+</body>
+</html>

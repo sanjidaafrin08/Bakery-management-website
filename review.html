@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reviews</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbb9b9;
+        }
+
+        header {
+            background-color: #5f4040;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            cursor: pointer;
+            font-size: 24px;
+            color: #ddd;
+            margin-right: 5px;
+        }
+
+        .rating input:checked~label {
+            color: #fffb00;
+        }
+
+        #comment-section {
+            margin-top: 20px;
+        }
+
+        #comments {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .comment {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #d56c6c;
+        }
+    </style>
+<body>
+    <div class="main" id="section1">
+        <div class="container">
+            <h1>BakeMart</h1>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menuhtml.html">MENU</a></li>
+                    <li><a href="features.html">FEATURES</a></li>
+                    <li><a href="review.html">REVIEWS</a></li>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="container6" style="background-color: white;">
+            <div class="row">
+    <header>
+        <h1>Restaurant Reviews</h1>
+    </header>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="rating">
+            <input type="radio" name="rating" id="star5" value="5" />
+            <label for="star5">☆</label>
+            <input type="radio" name="rating" id="star4" value="4" />
+            <label for="star4">☆</label>
+            <input type="radio" name="rating" id="star3" value="3" />
+            <label for="star3">☆</label>
+            <input type="radio" name="rating" id="star2" value="2" />
+            <label for="star2">☆</label>
+            <input type="radio" name="rating" id="star1" value="1" />
+            <label for="star1">☆</label>
+        </div>
+
+        <div id="comment-section">
+            <h3>Leave a Comment</h3>
+            <textarea rows="4" cols="50" id="comment" placeholder="Write your comment here..."></textarea>
+            <br>
+            <button onclick="submitReview()">Submit</button>
+        </div>
+
+        <ul id="comments">
+           
+        </ul>
+    </section>
+
+    <script>
+        function submitReview() {
+          
+            var rating = document.querySelector('input[name="rating"]:checked');
+            var commentText = document.getElementById('comment').value;
+
+          
+            if (rating && commentText) {
+                
+                var commentElement = document.createElement('li');
+                commentElement.className = 'comment';
+                commentElement.innerHTML = '<strong>Rating: ' + rating.value + '</strong><br>' + commentText;
+
+               
+                document.getElementById('comments').appendChild(commentElement);
+
+                rating.checked = false;
+                document.getElementById('comment').value = '';
+            } else {
+                alert('Please provide both a rating and a comment before submitting.');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

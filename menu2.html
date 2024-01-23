@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-widht, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <title>BakeMart</title>
+</head>
+<style>
+   /* div.slider div {
+        text-align: center;
+        background: orange;
+        font-size: 6rem;
+        line-height: 3;
+        margin: 0;
+    }*/
+</style>
+<body>
+<div class="main" id="section1">
+    <div class="container">
+        <h1>BakeMart</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+<!--                <li><a href="menu.html">MENU-01</a></li>-->
+<!--                <li><a href="menu2.html">MENU-02</a></li>-->
+                <li><a href="menuhtml.html">MENU</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+  <div class="container3">
+    <div class="slider3">
+      <div class="box">
+        <div style="text-align: center"><img src="images/cake-01.jpg" class="imageClass"></div>
+        <p class="pName">Peanut Cake</p>
+        <p class="price">Tk 1200.00</p>
+        <p class="weight"> 1000gm</p>
+        <p class="cakeDetails">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+        </p>
+        <button class="addToCartButton">Add to Cart</button>
+      </div>
+      <div class="box">
+          <div style="text-align: center"><img src="images/cake-02.jpg" class="imageClass"></div>
+        <p class="pName">Black Forest Cake</p>
+        <p class="price">Tk 900.00</p>
+        <p class="weight"> 1000gm</p>
+          <p class="cakeDetails">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+          </p>
+        <button class="addToCartButton">Add to Cart</button>
+      </div>
+      <div class="box">
+          <div style="text-align: center"><img src="images/cake-03.jpg" class="imageClass"></div>
+        <p class="pName">Apple Cake</p>
+        <p class="price">Tk 1200.00</p>
+        <p class="weight"> 1000gm</p>
+          <p class="cakeDetails">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+          </p>
+        <button class="addToCartButton">Add to Cart</button>
+      </div>
+      <div class="box">
+          <div style="text-align: center"><img src="images/cake-04.jpg" class="imageClass"></div>
+        <p class="pName">Flavoured Pastry</p>
+        <p class="price">Tk 100.00</p>
+        <p class="weight"> 150gm</p>
+          <p class="cakeDetails">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+          </p>
+        <button class="addToCartButton">Add to Cart</button>
+      </div>
+      <div class="box">
+          <div style="text-align: center"><img src="images/cake-05.jpeg" class="imageClass"></div>
+        <p class="pName">Flavoured Cake</p>
+        <p class="price">Tk 200.00</p>
+        <p class="weight"> 450gm</p>
+          <p class="cakeDetails">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+          </p>
+        <button class="addToCartButton">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<script>
+    $(document).ready(function(){
+        $('.slider3').bxSlider({
+            autoControls: true,
+            auto: true,
+            pager: true,
+            slideWidth: 1000,
+            mode: 'fade',
+            captions: true,
+            speed: 1000
+        });
+    });
+</script>
+</body>
+</html>

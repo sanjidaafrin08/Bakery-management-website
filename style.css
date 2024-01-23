@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    height: 600px;
+}
+
+#section2 {
+    height: 600px;
+    background: rgba(0, 0, 0, 0.7) url('https://pas-wordpress-media.s3.amazonaws.com/content/uploads/2014/07/shutterstock_176646242.jpg') center center fixed;
+
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url('https://static.showit.co/800/JpXEGzbYQLSDsPH0r1beug/shared/the_swiss_bakery_0390.jpg') center center fixed;
+
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    color: whitesmoke;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.5s;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
+
+.content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+.content h1{
+    font-size: 50px;
+}
+
+.content p{
+    text-align: center;
+    margin-top: 17px;
+}
+
+.search{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 49%;
+}
+
+.submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: orangered;
+}
+
+
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    width: 600px;
+    margin: 10px auto;
+    position: relative;
+}
+.layout a {
+    color: #666;
+}
+
+.slide {
+    display: none;
+}
+.slide li {
+    list-style: none;
+}
+.slide.slick-initialized {
+    display: block;
+}
+
+.slick-dots {
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li {
+    display: inline-block;
+    max-height: 56px;
+    max-width: 112px;
+    margin: 5px;
+}
+.slick-dots li img {
+    height: auto;
+    width: 100%;
+
+    cursor: pointer;
+
+    opacity: 0.5;
+}
+.slick-dots li.slick-active img {
+    cursor: default;
+
+    opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+    margin: -50px 0 0;
+
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+}
+.slick-prev {
+    left: -50px;
+}
+.slick-next {
+    right: -50px;
+}
+
+.icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.icon__cnt {
+    height: 100%;
+    width: 100%;
+}
+
+.container2{
+    margin-top: 10px;
+    background: #ffffffd4;
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.slider {
+    height: 500px;
+    width:80vw;
+    display: flex;
+    perspective: 1000px;
+    position: relative;
+    align-items:center;
+}
+
+.slider [class*="box"] {
+    /*   float: left; */
+    overflow: hidden;
+    border-radius:20px;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    position:absolute;
+}
+.slider [class*="box"]:nth-child(7),
+.slider [class*="box"]:nth-child(1) {
+    width: 80vh;
+    height: 60vh;
+    transform: scale(0.2) translate(-50%,-50%);
+    top: 10%;
+    z-index:1;
+}
+.slider [class*="box"]:nth-child(2),
+.slider [class*="box"]:nth-child(6) {
+    width: 80vh;
+    height: 60vh;
+    transform: scale(0.4) translate(-50%,-50%);
+    top: 20%;
+    z-index:2;
+}
+.slider [class*="box"]:nth-child(3),
+.slider [class*="box"]:nth-child(5) {
+    width: 80vh;
+    height: 60vh;
+    transform: scale(0.6) translate(-50%,-50%);
+    top: 30%;
+    z-index:3;
+}
+.slider [class*="box"]:nth-child(4) {
+    width: 60vw;
+    height: 60vh;
+    border-color: #c92026;
+    color: #fff;
+    transform: scale(1) translate(-50%,-50%);
+    top: 50%;
+    z-index:4;
+}
+.slider [class*="box"]:nth-child(1){
+    left:-25%;}
+.slider [class*="box"]:nth-child(2){
+    left:-10%;}
+.slider [class*="box"]:nth-child(3){
+    left:8%;}
+.slider [class*="box"]:nth-child(4){
+    left:50%;}
+.slider [class*="box"]:nth-child(5){
+    left:73%;}
+.slider [class*="box"]:nth-child(6){
+    left:80%;}
+.slider [class*="box"]:nth-child(7){
+    left:85%;}
+.slider .firstSlide {
+    -webkit-animation:  firstChild 1s;
+    animation:  firstChild 1s;
+}
+/*Animation for buyers landing page slider*/
+@-webkit-keyframes firstChild {
+    0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+    100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+}
+@keyframes firstChild {
+    0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+    100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+}
+.card-items{
+    padding: 20px;
+}
+.pName{
+    padding-left: 15px;
+    padding-top: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+.price{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.weight{
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+.clr-white{
+    color: white !important;
+}
+.cakeDetails{
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+}
+.container2 .cakeDetails{
+    width: 300px;
+}
+.container2 .pName{
+    padding-top: 10px;
+}
+.addToCartButton{
+    width: 124px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #17580e;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Slider 2 related css*/
+.imageClass{
+    border: 1px solid #25e7cb;
+    border-radius: 7px;
+    width: 1000px;
+    height: 500px;
+}
+.box{
+    text-align: center;
+}
+.container3{
+    padding-bottom: 50px;
+    background: #ffffffd4;
+    margin-top: 10px
+}
+.bx-wrapper{
+    margin-left: 23%;
+}
+.container4{
+    background-color: white;
+    padding: 10px;
+}
+.container4 .box{
+    border-radius: 7px;
+    background-color: #dddddd;
+    border: 1px solid #eeeeee;
+    padding: 17px;
+    margin-top: 10px;
+    clear: both;
+}
+.container4 .imageClass{
+    width: 260px;
+    height: 250px;
+}
+.container5{
+    height: 900px;
+}
+.feature{
+    text-align: center;
+}
+.fImage{
+    width: 100px;
+    height: 100px;
+}
+.red-border{
+    border-color: red !important;
+}
+.pest-border{
+    border-color: #03ab9c !important;
+}
+.purple-border{
+    border-color: #a40ec9 !important;
+}
+.yellow-border{
+    border-color: #d2b708 !important;
+}
+.fName{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid red;
+    padding-bottom: 21px;
+}
+.fDesc{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.fHeader{
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+
+}
+.fSubHeader{
+    padding: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+
+}
